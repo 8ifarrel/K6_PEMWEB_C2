@@ -1,0 +1,266 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", "sans-serif";
+  scroll-behavior: smooth;
+}
+
+.background-image {
+  background-image: url("../assets/background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover; 
+  background-position: center center;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+/* Navbar */
+
+.navbar-container {
+  position: static;
+  width: 100%;
+  padding: 20px;
+  background: transparent;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar-content-left {
+  position: relative;
+  display: flex;
+  margin-top: 20px;
+  left: 190px;
+}
+
+.navbar-logo {
+  position: relative;
+  font-size: 32px;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 700;
+  bottom: 12px;
+}
+
+.navbar-main-content a {
+  position: relative;
+  font-size: 18px;
+  color: #fff;
+  font-weight: 500;
+  text-decoration: none;
+  margin-left: 40px;
+}
+
+.navbar-main-content a::before {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: #fff;
+  transition: 0.25s;
+}
+
+.navbar-main-content a:hover::before {
+  width: 100%;
+}
+
+.navbar-content-right a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 500;
+  position: relative;
+  right: 190px;
+  margin-left: 15px;
+}
+
+.account-container {
+  padding: 10px 10px;
+  border-radius: 10px;
+}
+
+.account-container a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.account-container:hover {
+  border-radius: 10px;
+  background-color: #fff;
+  color: #ff0000;
+  transition: 0.3s;
+}
+
+
+/* Main content */
+
+.main-container {
+  padding-top: 50px;
+  position: relative;
+  padding-bottom: 100px;
+}
+
+
+/* Summary */
+
+.summary-container {
+  align-content: center;
+  text-align: center;
+  color: #fff;
+  padding-bottom: 50px;
+  position: static;
+}
+
+.title {
+  font-size: 36px;
+}
+
+.description {
+  font-size: 18px;
+  padding: 0 210px 0 210px;
+}
+
+/* Form */
+
+.form-container {
+  height: 100%;
+  padding: 20px;
+  width: 700px;
+  left: 50%;
+  transform: translate(-50%);
+  position: relative;
+  background-color: #fff;
+  box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.3);
+}
+
+.form-title {
+  color: white;
+  background-color: #d0021b;
+  height: 50px;
+  padding-top: 8px;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.form-content {
+  display: flex;
+  width: 100%;
+}
+
+.isi-laporan {
+  width: 100%;
+}
+
+/* Footer */
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  background-color: #f6f6f6;
+  color: black;
+  padding: 45px;
+  bottom: 0;
+}
+
+.contact-info {
+  padding-left: 200px;
+  padding-top: 30px;
+  color: black;
+}
+
+.contact-info a {
+  color: black;
+  text-decoration: none;
+}
+
+.social-media {
+  padding-top: 25px;
+  padding-right: 200px;
+}
+
+.social-media ul {
+  list-style: none;
+  display: flex;
+}
+
+.social-media ul li {
+  margin-bottom: 10px;
+  margin-right: 10px;
+  margin-top: 10px;
+}
+
+.footer-copyright {
+  text-align: center;
+  font-size: 14px;
+  color: black;
+  background-color: #f6f6f6;
+  padding-bottom: 30px;
+}
+
+/* Dark mode */
+
+.dark-mode .background-image {
+  background-image: none;
+}
+
+.dark-mode .main-container {
+  background-color: #292929;
+  color: #fff;
+  color: rgb(113, 113, 113);
+}
+
+.dark-mode-btn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-image: url("../assets/light_mode/dark-mode-icon.png");
+  border-radius: 10%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 60px;
+  height: 60px;
+}
+
+.dark-mode .dark-mode-btn {
+  content: url("../assets/dark_mode/light-mode-icon.png");
+  border-radius: 10%;
+}
+
+.dark-mode .form-container {
+  background-color: #161616;
+  color: #fff;
+  box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.3);
+}
+
+.dark-mode .footer-content {
+  background-color: #1c1c1c;
+  color: #fff;
+}
+
+.dark-mode .contact-info {
+  color: white;
+}
+
+.dark-mode .social-media ul li {
+  text-decoration: none;
+  color: white;
+}
+
+.dark-mode .footer-copyright {
+  color: white;
+  background-color: #1c1c1c;
+}
+
+.dark-mode .contact-info a {
+  color: #fff;
+}
+
+.dark-mode #github-logo img {
+  content: url("../assets/dark_mode/github-logo.png");
+}
+

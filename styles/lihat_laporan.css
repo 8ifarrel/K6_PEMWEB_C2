@@ -1,0 +1,94 @@
+#laporan-deskripsi {
+  border: 1.5px solid #ccc;
+  height: 240px;
+  margin-bottom: 10px;
+  overflow: auto;
+  padding: 5px; 
+}
+
+#laporan-judul,
+#laporan-tanggal,
+#laporan-instansi,
+#laporan-email,
+#berkas-laporan {
+  border: 1.5px solid #ccc;
+  height: 40px;
+  margin-bottom: 10px;
+  overflow: auto;
+  padding: 5px; 
+}
+
+#laporan-lokasi {
+  border: 1.5px solid #ccc;
+  padding: 5px; 
+  height: 80px;
+  margin-bottom: 10px;
+  overflow: auto;
+}
+
+
+#berkas-laporan a {
+  color: black;
+  text-decoration: none;
+  /* font-weight: bold; */
+}
+
+#berkas-laporan a:hover {
+  text-decoration: underline;
+}
+.fa-2xl {
+  font-size: 3.5em;
+}
+
+.edit-btn,
+.delete-btn {
+  background-color: #d0021b;
+  padding: 10px;
+  text-align: center;
+  border-radius: 10px;
+  margin-top: 15px;
+}
+
+.edit-btn a,
+.delete-btn a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.form-title {
+  padding-left: 7px;
+  padding-right: 7px;
+  position: static;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Dark mode */
+
+.dark-mode #laporan-deskripsi,
+.dark-mode #laporan-judul,
+.dark-mode #laporan-tanggal,
+.dark-mode #laporan-lokasi,
+.dark-mode #laporan-instansi,
+.dark-mode #laporan-email {
+  border-color: #505050;
+  color: white;
+}
+
+.status-laporan {
+    margin-bottom: 10px;
+    height: 40px;
+    border: 1.5px solid #ccc;
+    padding: 5px; 
+}
+
+.status-laporan p {
+    margin: 0;
+    color: #333;
+}
+
+.status-laporan b {
+    font-weight: bold;
+    color: black;
+}

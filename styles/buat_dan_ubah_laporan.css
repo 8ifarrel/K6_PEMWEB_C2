@@ -1,0 +1,37 @@
+input[type="text"],
+input[type="date"],
+input[type="email"],
+input[type="file"] {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+textarea {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+}
+
+input[type="submit"] {
+  background-color: #d0021b;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* Dark mode */
+
+.dark-mode input[type="text"],
+.dark-mode input[type="date"],
+.dark-mode input[type="email"],
+.dark-mode textarea {
+  color: white;
+}

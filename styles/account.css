@@ -1,0 +1,45 @@
+body {
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+
+.account-form-container { 
+  width: 300px;
+  border:1px solid #ccc;
+  background-color: #fff;
+  padding: 15px;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+.account-form-container h2 {
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.input-box{
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  box-sizing: border-box;
+}
+
+.submit-btn {
+  padding: 8px 15px;
+  background-color: #C70039;
+  color: #fff;
+  border:none;
+  cursor: pointer;
+  margin-left: 100px;
+}
+
+.link {
+  margin-top: 10px;
+}
+
+.link a{
+  color: #C70039;
+  text-decoration: none;
+}
